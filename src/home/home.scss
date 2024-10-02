@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Edu+AU+VIC+WA+NT+Guides:wght@700&family=Fredoka:wght@300..700&family=Space+Grotesk:wght@300..700&display=swap');
+
+$fontchu: "Anton", sans-serif;
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #003DA5;
+    color: white;
+    padding: 10px;
+
+}
+
+.Logominhquanhome {
+    position: relative;
+    font-family: "Bungee Shade", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    margin: 0;
+    font-size: 50px;
+    color: white;
+    text-shadow: 0 1px 2px rgb(63, 57, 57);
+    bottom: 10px;
+}
+
+.headerbutton {
+    position: relative;
+    width: fit-content;
+}
+
+.headerbutton ul {
+    display: flex;
+
+}
+
+.headerbutton ul li {
+    list-style: none;
+    margin: 0 25px;
+    overflow: 2;
+    width: fit-content;
+    text-align: center;
+    font-family: $fontchu;
+    font-weight: 400;
+    font-style: normal;
+    transition: 0.5 ease-in-out;
+}
+.headerbutton ul li :hover{
+    color: gold;
+}
+
+.headerbutton ul li p a{
+    text-decoration: none;
+    color: white;
+}
+
+.combobox {
+    bottom: 5px;
+    position: relative;
+    color: aquamarine;
+}
+
+.searchBackground {
+    background-color: #dcdcdc;
+    width: 350px;
+    border-radius: 10px;
+    border: 2px solid white;
+    display: flex;
+}
+
+.searchBackground img {
+    position: relative;
+    left: 15px;
+    top: 3px;
+
+}
+
+.searchBox {
+    height: 35px;
+    width: 300px;
+    padding: 0, 50px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: #003DA5;
+    font-family: $fontchu;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.searchBox::placeholder {
+    color: #003DA5;
+    font-family: $fontchu;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.searchBox:focus {
+    outline: none;
+}
+
+.User {
+    position: relative;
+    display: flex;
+    font-family: $fontchu;
+    font-weight: 400;
+    font-style: normal;
+}
+.User a:hover{
+    color:gold;
+}
+
+.User img {
+    position: relative;
+    bottom: 10px;
+    margin-right: 10px;
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 5px;
+}
+.User img:hover ~a{
+    color: gold;
+}
+.User a{
+    text-decoration: none;
+    color: white;
+}
+
+.avatarUser {
+    border: 2px solid white;
+    width: 45px;
+    border-radius: 15px;
+}
+
+.Cart {
+    position: relative;
+    display: flex;
+    font-family: $fontchu;
+    font-weight: 400;
+    font-style: normal;
+    bottom: 6px;
+    margin-right: 30px;
+    font-size: 18px;
+}
+
+
+.Cart a {
+   text-decoration: none;
+   color: white;
+}
+.Cart a:hover {
+    color: gold;
+ }
+.Cart img:hover ~a{
+    color: gold;
+}
+
+.Cart img {
+    color: white;
+    margin-right: 10px;
+    position: relative;
+    bottom: 5px;
+}
+
+.itemCart{
+    position: absolute;
+    text-align: center;
+    border-radius: 25px;
+    padding-left: 5px;
+    padding-right:6px;
+    padding-bottom: -10px;
+    background-color: #dcdcdc;
+    width: fit-content;
+    color: white;
+    bottom: 20px;
+    left: 20px;
+    font-size: 15px;
+}
+.hotlineitem{
+    display: none;
+    position: absolute;
+    top:48px;
+    left: 733px;
+    padding: 5px;
+    transition: all 0.5s ease-in-out;
+}
+.hotLine:hover ~p{
+    display: block;
+    color: gold;
+}
