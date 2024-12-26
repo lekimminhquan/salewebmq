@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+$fontchu:"JetBrains Mono", serif;
+.mainPage{
+    display: flex;
+    justify-content:space-around;
+}
+.Menu{
+    display: flex;
+    height: fit-content;
+    box-shadow: 2px 2px 10px gray;
+    border-radius: 10px;
+    margin-left: 15px;
+    margin-top: 12px;
+    justify-content: center;
+    text-align: center;
+}
+.Category ul li{
+    list-style: none;
+    margin-top: 10px;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:bold;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    color:#003DA5;
+    margin-right: 40px;
+    justify-content: center;
+    
+}
+.Category ul li span:hover ~button{
+    color: gold;
+    background-color: #003DA5;
+}
+.Category ul li button{
+    margin-left: 10px;
+    text-align: center;
+    background-color:white;
+    border:none;
+    font-family: $fontchu;
+    font-optical-sizing: auto;
+    font-weight:bolder;
+    font-style: normal;
+    color:#003DA5;
+    font-size: 16px;
+    width: 80%;
+    margin-top: 10px;
+    padding: 10px;
+    transition: all 0.35s ease-in-out;
+    border-radius:15px ;         
+}
+.Category ul li button:hover{
+    color: gold;
+    background-color: #003DA5;
+    
+}
+.iconCate{
+    width: 25px;
+    position: relative;
+    left: 0;
+    top: 5px;
+}
+

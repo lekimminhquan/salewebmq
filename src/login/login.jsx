@@ -7,8 +7,7 @@ import { useEffect, useState } from 'react';
 import { Router, useNavigate } from 'react-router-dom'
 import Alert from '@mui/material/Alert';
 import axios from 'axios'
-import { useSearchParams } from 'react-router-dom';
-
+import env from "react-dotenv";
 function Loginpage() {
   const [Sign, setSign] = useState(1)
   const [User, setUser] = useState('')
@@ -47,9 +46,8 @@ function Loginpage() {
         password: Pass
       })
         .then((res) => {
-          if (res.data.message == true) {
-            nagavite('./home', { state: { id: res.data.user._id, username: res.data.user.username } })
-            console.log(res.data.user._id)
+          if (res.data.Token == env.REACT_APP_CONFIRM) {
+            nagavite('/', { state: { id: res.data.user._id, username: res.data.user.username } })
           }
           else {
             setCheckps(true)
@@ -150,7 +148,7 @@ function Loginpage() {
       <div className="login">
         <div className='Sign' >
           <Stack spacing={1} direction="row">
-            <Button variant="outlined" color="success" className='buttons' onClick={() => { setSign(1) }} >Sign In</Button>
+            <Button variant="outlined"  className='buttons' onClick={() => { setSign(1) }} >Sign In</Button>
             <Button variant="outlined" className='buttons1' onClick={() => { setSign(0) }}>Sign Up</Button>
           </Stack>
         </div>

@@ -3,12 +3,13 @@
 $fontchu: "Anton", sans-serif;
 .header {
     display: flex;
-    justify-content: space-between;
+    gap:35px;
+    justify-content:center;
     align-items: center;
     background-color: #003DA5;
     color: white;
     padding: 10px;
-
+    height: 100px;
 }
 
 .Logominhquanhome {
@@ -22,6 +23,17 @@ $fontchu: "Anton", sans-serif;
     color: white;
     text-shadow: 0 1px 2px rgb(63, 57, 57);
     bottom: 10px;
+    transition: all 0.5s linear;
+    animation: logo 3s linear  infinite;
+}
+@keyframes logo {
+    0%{
+        text-shadow: 0 0 0px goldenrod;
+    }
+    50%{
+        text-shadow: 0 1px 8px goldenrod ;
+    }
+    100%{ text-shadow: 0 0 0px goldenrod}
 }
 
 .headerbutton {
@@ -43,11 +55,11 @@ $fontchu: "Anton", sans-serif;
     font-family: $fontchu;
     font-weight: 400;
     font-style: normal;
-    transition: 0.5 ease-in-out;
+    transition: 0.5s ease-in-out;
 }
-.headerbutton ul li :hover{
-    color: gold;
-}
+// .headerbutton ul li :hover{
+//     color: gold;
+// }
 
 .headerbutton ul li p a{
     text-decoration: none;
@@ -99,14 +111,24 @@ $fontchu: "Anton", sans-serif;
 }
 
 .User {
-    position: relative;
     display: flex;
     font-family: $fontchu;
     font-weight: 400;
     font-style: normal;
+    left: 120px;
 }
 .User a:hover{
     color:gold;
+}
+.User a:hover div{
+    display:none;
+}
+.user a {
+    position: relative;
+}
+.User a div {
+    position: absolute;
+
 }
 
 .User img {
@@ -116,6 +138,7 @@ $fontchu: "Anton", sans-serif;
     border: 2px solid white;
     border-radius: 25px;
     padding: 5px;
+
 }
 .User img:hover ~a{
     color: gold;
@@ -140,12 +163,14 @@ $fontchu: "Anton", sans-serif;
     bottom: 6px;
     margin-right: 30px;
     font-size: 18px;
+    transition: all 1s linear;
 }
 
 
 .Cart a {
    text-decoration: none;
    color: white;
+
 }
 .Cart a:hover {
     color: gold;
@@ -176,14 +201,10 @@ $fontchu: "Anton", sans-serif;
     font-size: 15px;
 }
 .hotlineitem{
-    display: none;
-    position: absolute;
-    top:48px;
-    left: 733px;
     padding: 5px;
+    margin-top: 10px;
     transition: all 0.5s ease-in-out;
 }
-.hotLine:hover ~p{
-    display: block;
+.hotLine:hover ~span{
     color: gold;
 }

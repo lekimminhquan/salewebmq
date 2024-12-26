@@ -64,8 +64,8 @@
     text-align: center;
     margin: 0 auto;
     font-size: 100px;
-    color: rgb(6, 150, 150);
-    text-shadow: 0 1px 2px rgb(63, 57, 57);
+    color: #003DA5;
+    text-shadow: 0 2px 1.5px white;
 }
 .buttonlogin{
   display: grid;
