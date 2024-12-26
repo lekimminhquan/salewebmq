@@ -2,6 +2,10 @@
   "name": "salemq",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=20.11.0",
+    "pnpm": ">=8.13.1"
+  },
   "dependencies": {
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
@@ -12,6 +16,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.7.6",
+    "pnpm": "^9.15.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-dotenv": "^0.1.3",
